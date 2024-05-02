@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Recognition and Language Generation</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="static/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 style="text-align:center;">ImageTalk</h1>
+        <p style="text-align:center;">Generate stories from your photos and keywords</p>
+    <div class="container">
+        <div class="column">
+            <!-- First column for album -->
+            <h2>Select Photos</h2>
+            <div class="album" id="album">
+                <div class="image-container"> </div>
+            </div>
+            <button style="float:right;" id="extract_info_Button">Extract Info</button>
+        </div>
+        <div class="column">
+            <!-- Second column for textboxes -->
+            <h2>Steer Your Story</h2>
+            <div class="image-recognition">
+                <h3>Object Detection</h3>
+                <textarea id="objectsOutput" placeholder="Extracted objects"></textarea>
+                <h3>Captions</h3>
+                <textarea id="captionsOutput" placeholder="Identified image captions"></textarea>
+            </div>
+            <div class="user-steering">
+                <h3>keywords</h3>
+                <textarea id="keywordsInput" placeholder="Enter keywords"></textarea>
+                <h3>Language styles</h3>
+                <textarea id="languageInput" placeholder="Enter language styles"></textarea>
+            </div>
+            
+            <button style="float:right;" id="generate_story_Button">Generate Story</button>
+            <button style="float:right; margin-right: 20px;" id="clear_all_steering_Button">Clear</button>
+        </div>
+        <div class="column">
+            <!-- Third column for textboxes -->
+            <div class="story">
+                <h2>Generated Story</h2>
+                <h3> </h3>
+                <textarea id="storyOutput" placeholder="Generated story"></textarea>
+                <button style="float:right;" id="read_story_Button">Read Story</button>
+                <button style="float:right; margin-right: 20px;" id="clear_all_story_Button">Clear All</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
