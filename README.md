@@ -12,9 +12,21 @@ For full details, please refer to the accompanying paper.
 
 Install dependencies:
 
+### Step 1:
 ```bash
 pip install -r requirements.txt
 ```
+
+### Step 2:
+Set your OpenAI API key before running in `story_generation.py`.
+
+### Step 3: 
+```bash
+python app/app.py
+```
+
+### Step 4: 
+Open your browser to the address Flask prints.
 
 ## 📚 Citation
 
@@ -22,7 +34,7 @@ If you use ImageTalk for research or development, please cite:
 ```bash
 @article{yang2025imagetalk,
   title={ImageTalk: Multimodal Text Generation for AAC Support in Motor Neuron Disease},
-  author={Yang, Boyin},
+  author={Yang, Boyin and Jiang, Puming and Kristensson, Per Ola},
   journal={arXiv preprint arXiv:XXXX.XXXXX},
   year={2025}
 }
